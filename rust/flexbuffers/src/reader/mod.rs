@@ -252,6 +252,11 @@ impl<B: Buffer> Reader<B> {
         self.fxb_type
     }
 
+    /// Returns address in the underlying buffer.
+    pub fn address(&self) -> usize {
+        self.address
+    }
+
     /// Returns the bitwidth of this Reader.
     pub fn bitwidth(&self) -> BitWidth {
         self.width
